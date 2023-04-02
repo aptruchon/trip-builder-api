@@ -39,7 +39,7 @@
             <br>
             <br>
 
-            @if ($tripType == "roundtrip")
+            @if ($tripType == "round-trip")
             <label for="return_date">Return date</label>
             <input type="date" name="return_date" required>
             <br>

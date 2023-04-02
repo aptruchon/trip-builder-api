@@ -16,10 +16,10 @@
             @csrf
 
             What type of trip are you looking for today?
-            <label for="oneway">One way</label>
-            <input type="radio" name="trip-type" id="oneway" value="oneway">
-            <label for="roundtrip">Round trip</label>
-            <input type="radio" name="trip-type" id="2" value="roundtrip">
+            <label for="one-way">One way</label>
+            <input type="radio" name="trip-type" id="one-way" value="one-way">
+            <label for="round-trip">Round trip</label>
+            <input type="radio" name="trip-type" id="2" value="round-trip">
 
             <button type="submit">Continuer</button>
         </form>
