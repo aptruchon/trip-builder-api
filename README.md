@@ -5,6 +5,7 @@ Very basic API using the Laravel framework and MySql as DB
 To install everything, just follow the next steps:
 - Download the content of the repository
 - In your terminal, in the trip-builder-app repository, run composer install
+- Go in the .env file and set up your environment variables (DB_DATABASE=trip-builder, DB_USERNAME= ?, DB_PASSWORD= ?)
 - Once the dependencies are installed, run php artisan migrate to create the database and the tables
 - Then you can run php artisan db:seed to do the insertion in those tables
 
