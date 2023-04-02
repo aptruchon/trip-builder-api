@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1>Trip-builder</h1>
-        <form action="{{ route("flightChoice") }}" method="POST">
+        <form action="{{ route("possibleTrips") }}" method="POST">
             @csrf
             <h3>Tailor your trip!</h3>
 

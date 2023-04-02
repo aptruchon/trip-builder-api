@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Airport;
-use App\Models\Flight;
 use Illuminate\Http\Request;
 
-class TripController extends Controller
+class FormController extends Controller
 {
     public function showTripForm(Request $request)
     {
