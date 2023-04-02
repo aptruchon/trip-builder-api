@@ -36,9 +36,16 @@ class TripController extends Controller
 
     public function showPossibleTrips(Request $request)
     {
-        // dump($request);
         $tripType = $request['trip_type'];
         $departureFlight = Flight::all()->where("departure_airport", $request["departure_airport"])->first();
+
+        if (!isset($departureFlight)) {
+            return response()->json([
+                "status" => 422,
+                "errors" => "No flights were found"
+            ]);
+        }
+
         if($tripType == "round-trip")
         {
             $returnFlight = Flight::all()->where("departure_airport", $departureFlight["arrival_airport"])->first();
